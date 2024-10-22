@@ -8,7 +8,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-color: darkgray;
+  background-color: #242424;
 }
 
 :root {
