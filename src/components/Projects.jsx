@@ -28,7 +28,7 @@ const images = [
 export default function Projects() {
     return (
       <Animated>
-        <h1 className="mb-4">Projects</h1>
+        <h1 className="mb-4 text-blue-500 ">Projects</h1>
         <h2 className="mb-4 text-2xl">Unfortunately most of my projects are considered proprietary, but feel free to check some of my home projects below!</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {Array.from({ length: 6 }).map((_, index) => (

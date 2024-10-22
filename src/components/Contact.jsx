@@ -3,7 +3,7 @@ import Animated from './Animated';
 export default function Contact() {
     return (
       <Animated>
-        <h1>Contact</h1>
+        <h1 className='text-blue-500 '>Contact</h1>
         <form className="mt-8 space-y-6">
           <div className="rounded-md shadow-sm -space-y-px">
             <div>
