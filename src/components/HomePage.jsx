@@ -1,9 +1,10 @@
+import Animated from './Animated';
 
 export default function HomePage() {
   return (
-    <div>
+    <Animated>
       <h1>Home Page</h1>
       <p>Welcome to the Home Page!</p>
-    </div>
+    </Animated>
   )
 }

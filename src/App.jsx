@@ -4,13 +4,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
 import { Outlet } from 'react-router-dom'
+import { AnimatePresence } from 'framer-motion'
 
 function App() {
 
   return (
     <>
       <Header />
-      <Outlet />
+      <AnimatePresence>
+          <Outlet />
+      </AnimatePresence>
     </>
   )
 }

@@ -1,9 +1,10 @@
+import Animated from './Animated';
 
 export default function Resume() {
     return (
-      <div>
+      <Animated>
         <h1>Resume</h1>
         <p>About me!</p>
-      </div>
+      </Animated>
     )
   }

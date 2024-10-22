@@ -1,9 +1,10 @@
+import Animated from './Animated';
 
 export default function Projects() {
     return (
-      <div>
-        <h1>About</h1>
+      <Animated>
+        <h1>My Projects</h1>
         <p>About me!</p>
-      </div>
+      </Animated>
     )
   }
