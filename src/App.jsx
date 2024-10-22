@@ -13,9 +13,11 @@ function App() {
   return (
     <>
       <Header />
+      <div className="flex flex-col items-center justify-center pt-12 pb-12">
       <AnimatePresence>
           <Outlet />
       </AnimatePresence>
+      </div>
       <Footer />
     </>
   )
