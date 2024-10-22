@@ -1,5 +1,4 @@
 import { createRoot } from 'react-dom/client'
-
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import App from './App'
@@ -8,6 +7,7 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Resume from './components/Resume'
 import Contact from './components/Contact'
+import NotFound from './components/NotFound'
 
 import './index.css'
 
@@ -36,8 +36,11 @@ const router = createBrowserRouter([
         path: 'contact',
         element: <Contact />,
       },
+      {
+        path: '*',
+        element: <NotFound />,
+      },
     ],
-
   }
 ]);
 
