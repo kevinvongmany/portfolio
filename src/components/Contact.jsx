@@ -45,6 +45,7 @@ export default function Contact() {
               placeholder="Name"
               value={formData.name}
               onChange={handleChange}
+              autoComplete='off'
             />
           </div>
           <div>
@@ -58,6 +59,7 @@ export default function Contact() {
               placeholder="Email address"
               value={formData.email}
               onChange={handleChange}
+              autoComplete='off'
             />
           </div>
           <div>
@@ -65,8 +67,9 @@ export default function Contact() {
             <textarea
               id="message"
               name="message"
+              rows="9"
               required
-              className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 dark:text-gray-200 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+              className="resize-none appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 dark:text-gray-200 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
               placeholder="Message"
               value={formData.message}
               onChange={handleChange}
