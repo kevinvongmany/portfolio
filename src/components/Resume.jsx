@@ -52,7 +52,7 @@ export default function Resume() {
         </div>
         <div className='mb-6'>
           <h3 className='text-2xl mt-1 mb-2 text-blue-500 font-semibold'>Mentorship & Training</h3>
-          <p className='mb-1 text-gray-400'>Provide internal training sessions, client-facing training sessions and weekend coding workshops</p>
+          <p className='mb-1 text-gray-400'>Provide internal training sessions, client-facing training sessions and weekend coding workshops.</p>
         </div>
         <div className='mb-6'>
           <h3 className='text-2xl mt-1 mb-2 text-blue-500 font-semibold'>Team & Project Management</h3>
