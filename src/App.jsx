@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import { Outlet } from 'react-router-dom'
 import { AnimatePresence } from 'framer-motion'
+import { ToastContainer } from 'react-toastify'
 
 
 function App() {
@@ -18,6 +19,18 @@ function App() {
           <Outlet />
       </AnimatePresence>
       </div>
+      <ToastContainer 
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={true}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       <Footer />
     </>
   )
