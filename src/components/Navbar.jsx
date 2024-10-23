@@ -41,9 +41,10 @@ function Navbar() {
                 <ul className="links flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700 text-black dark:text-gray-300">
                     <li>
                         <NavLink 
+                            onClick={(e) => !e.currentTarget.classList.contains('active') && toggleMenu()}
                             to="/about" 
                             className={({ isActive }) => 
-                                `block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:hover:bg-gray-700 dark:border-gray-700 ${isActive ? 'text-blue-700 dark:text-blue-500' : 'text-gray-300'}`
+                                `block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:hover:bg-gray-700 dark:border-gray-700 ${isActive ? 'active text-blue-700 dark:text-blue-500' : 'text-gray-300'}`
                             }
                         >
                             About
@@ -51,9 +52,10 @@ function Navbar() {
                     </li>
                     <li>
                         <NavLink 
+                            onClick={(e) => !e.currentTarget.classList.contains('active') && toggleMenu()}
                             to="/projects" 
                             className={({ isActive }) => 
-                                `block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:hover:bg-gray-700 dark:border-gray-700 ${isActive ? 'text-blue-700 dark:text-blue-500' : 'text-gray-300'}`
+                                `block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:hover:bg-gray-700 dark:border-gray-700 ${isActive ? 'active text-blue-700 dark:text-blue-500' : 'text-gray-300'}`
                             }
                         >
                             Projects
@@ -61,9 +63,10 @@ function Navbar() {
                     </li>
                     <li>
                         <NavLink 
+                            onClick={(e) => !e.currentTarget.classList.contains('active') && toggleMenu()}
                             to="/resume" 
                             className={({ isActive }) => 
-                                `block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:hover:bg-gray-700 dark:border-gray-700 ${isActive ? 'text-blue-700 dark:text-blue-500' : 'text-gray-300'}`
+                                `block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:hover:bg-gray-700 dark:border-gray-700 ${isActive ? 'active text-blue-700 dark:text-blue-500' : 'text-gray-300'}`
                             }
                         >
                             Resume
@@ -71,9 +74,10 @@ function Navbar() {
                     </li>
                     <li>
                         <NavLink 
+                            onClick={(e) => !e.currentTarget.classList.contains('active') && toggleMenu()}
                             to="/contact" 
                             className={({ isActive }) => 
-                                `block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:hover:bg-gray-700 dark:border-gray-700 ${isActive ? 'text-blue-700 dark:text-blue-500' : 'text-gray-300'}`
+                                `block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:p-0 dark:hover:bg-gray-700 dark:border-gray-700 ${isActive ? 'active text-blue-700 dark:text-blue-500' : 'text-gray-300'}`
                             }
                         >
                             Contact
