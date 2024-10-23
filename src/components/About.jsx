@@ -1,9 +1,11 @@
 import Animated from "./Animated";
 import { Link } from "react-router-dom";
+import Headshot from "../assets/HeadshotSquare.png";
 
 export default function About() {
   return (
     <Animated>
+      <img src={Headshot} alt="Kevin Vongmany" className="rounded-full h-49 w-49 mx-auto " />
       <h1 className="mb-4 text-blue-500 ">Solution and software development</h1>
       <p className="text-xl">
         As a developer with over a decade's worth of technological experience, I
